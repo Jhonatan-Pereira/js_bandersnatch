@@ -1,4 +1,4 @@
-class VideoComponet {
+class VideoComponent {
   constructor() {
 
   }
@@ -12,5 +12,6 @@ class VideoComponet {
     });
 
     player.addChild(modal);
+
   }
 }

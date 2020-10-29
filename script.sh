@@ -12,7 +12,7 @@ for mediaFile in `ls $ASSETSFOLDER | grep .mp4`; do
 
   # Criar Arquivos de resolucoes diferentes na pasta
   OUTPUT=$ASSETSFOLDER/$FILENAME/$FILENAME
-  DURATION=$(ffprobe -i $INPUT -show_format -v quiet | sed -n 's/duration//p')
+  DURATION=$(ffprobe -i $INPUT -show_format -v quiet | sed -n 's/duration=//p')
   # echo $DURATION
 
   OUTPUT144=$OUTPUT-$DURATION-144
