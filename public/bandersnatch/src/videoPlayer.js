@@ -86,7 +86,7 @@ class VideoMediaPlayer {
   setVideoPlayerDuration(finalURL) {
     const bars = finalURL.split('/')
     const [ name, videoDuration] = bars[bars.length - 1].split('-')
-    this.videoDuration += videoDuration
+    this.videoDuration += parseFloat(videoDuration)
   }
   async processBufferSegments(allSegments) {
     const sourceBuffer = this.sourceBuffer
