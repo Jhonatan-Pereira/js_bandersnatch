@@ -1,0 +1,6 @@
+component: website
+name: bandersatch-assets
+stage: dev
+inputs:
+  src:
+    src: .
